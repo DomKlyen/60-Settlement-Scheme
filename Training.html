@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org
+/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 
 <head>
@@ -148,7 +148,7 @@
                 <li> Faucibus porta lacus fringilla vel</li>
                 <li> Aenean sit amet erat nunc</li>
             </ol>
-        </lI>
+        </li>
         <li> Eget porttitor lorem</li>
     </ol>
     <br/>
@@ -288,44 +288,47 @@
     </table>
 
     <h2>Log In:</h2>
-    <form action="https://consumer.snapfinance.co.uk/?#/?mid=14353&source=SMS">
-        <label for="uname">
+    <form action="https://consumer.snapfinance.co.uk/?#/?mid=14353">
+      <div>
+            <label for="uname">
             <b>Username</b>
         </label>
         <br/>
-        <input type="text" placeholder="Username" name="uname" id="uname" required>
+        <input type="text" placeholder="Username" name="uname" id="uname" required="required"/>
         <br/>
         <label for="psw">
             <b>Pasword</b>
         </label>
         <br/>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required="required"/>
         <br/>
         <button type="submit">Login</button>
         <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <input type="checkbox" checked="checked" name="remember"/> Remember me
         </label>
         <br/>
+    </div>
     </form>
     <br/>
     <br/>
     <h2>Contact Us:</h2>
     <form action="Images/infosection1.jpg">
+        <div>
         <br/>
         <label>Name</label>
-        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Name"/>
         <br/>
         <label>Email
         </label>
-        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Email"/>
         <br/>
         <label>Date of Birth
         </label>
-        <input type="date">
+        <input type="date"/>
         <br/>
         <label>Telephone Number
         </label>
-        <input type="tel" placeholder="Tel:">
+        <input type="tel" placeholder="Tel:"/>
         <br/>
         <br/>
         <label>Message</label>
@@ -337,26 +340,29 @@
         <label>Reason for Contact
             <br/>
         </label>
-        <input type="text" style="height: 2vw; width: 50%;" disabled>
+        <input type="text" style="height: 2vw; width: 50%;" disabled="disabled"/>
+    </div>
     </form>
     <br/>
     <br/>
     <form>
-        <input type="radio" name="one" checked="checked" />Option 1 should be selected by default
+        <div>
+        <input type="radio" name="one" checked="checked"/>Option 1 should be selected by default
         <br/>
-        <input type="radio" name="one" />Option 2 is something else
+        <input type="radio" name="one"/>Option 2 is something else
         <br/>
-        <input type="radio" name="one" /> disabled>Option 3 is disabled
+        <input type="radio" name="one"/> disabled>Option 3 is disabled
         <br/>
         <br/>
         <select name="list">
-            <option value="Please select" disabled selected>Please Select</option>
+            <option value="Please select" disabled="disabled" selected="selected">Please Select</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
+    </div>
     </form>
 </div>
 </body>
