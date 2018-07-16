@@ -9,6 +9,8 @@
 <div>
     <h1>Headings</h1>
 
+    <hr style="height: 4px; background-color: black">
+
     <h1>h1. heading
         <small>Secondary Text</small>
     </h1>
@@ -47,6 +49,9 @@
         Maecenas seed dam eget rises varies bandit sit amet non-magna. Donec id elit non mi porta gravida at eget metus. Duis mollis,
         est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     </p>
+    <kbd>Keyboard input</kbd><br>
+    <var>Variable</var> <br>
+    <s> strikethrough </s>
 
     <br/>
     <h1>Lead Body Copy (with text alignment)</h1>
@@ -62,7 +67,9 @@
     <p class="justify">
         Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
     </p>
-
+    <p class="justify">
+        <bdo dir="rtl"> left to right text
+        </bdo></p>
     <br/>
     <h1 id="AD">Addresses</h1>
     <address>
@@ -81,6 +88,12 @@
             <cite> Source Title</cite>
         </footer>
     </blockquote>
+
+    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</q>
+            <footer>Someone famous in
+                <cite> Source Title</cite>
+            </footer>
+        
 
     <br/>
     <h1>Description List</h1>
@@ -206,7 +219,10 @@
 
     <h1>Tables</h1>
     <table class="table1">
-
+            <colgroup>
+                <col style="background-color:red">
+            </colgroup>
+        <caption>Test table</caption>
         <thead>
             <tr>
                 <th>#</th>
@@ -215,6 +231,7 @@
                 <th>User Name</th>
             </tr>
         </thead>
+        <tbody>
         <tr>
             <td>1</td>
             <td>Mark</td>
@@ -233,6 +250,12 @@
             <td>Bird</td>
             <td>@twitter</td>
         </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">table footer</td>
+        </tr>
+    </tfoot>
     </table>
     <br/>
 
@@ -304,7 +327,9 @@
     <br/>
 
     <h2>Contact Us:</h2>
-    <form action="Images/infosection1.jpg">
+    <fieldset>
+        <legend>Personal information:</legend>
+<form action="Images/infosection1.jpg">
         <div>
             <br/>
             <label>Name</label>
@@ -333,6 +358,7 @@
                 <br/>
             </label>
             <input type="text" disabled="disabled" />
+        </fieldset>
         </div>
     </form>
     <br/>
@@ -348,11 +374,15 @@
             <br/>
             <select name="list">
                 <option value="Please select" disabled="disabled" selected="selected">Please Select</option>
+                <optgroup label="1-2">
                 <option value="1">1</option>
                 <option value="2">2</option>
+                </optgroup>
+                <optgroup label="3-5">
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
+                </optgroup>
             </select>
         </div>
     </form>
