@@ -1,85 +1,139 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    
+
 
 <head>
     <style type="text/css">
         body {
-
+            max-width: 992px;
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
         }
 
-        table {
-            background-color: rgb(233, 233, 233);
-            border: 1px solid rgb(255, 255, 255);
-            border-collapse: collapse;
-        }
-
-        td {
-            border: 10px solid rgb(255, 255, 255);
-            color: black;
-            text-align: center
+        h1 {
+            border-bottom: 4px solid black;
+            padding-bottom: 20px;
         }
 
         a {
             text-decoration: none;
             color: black;
         }
+        .wrap {
+            float: left;
+            width: 33.33%;
+            box-sizing: border-box;
+            padding-left: 30px;
+        }
+
+        .box > a > *:last-child {
+            margin-bottom: 0;
+        }
+
+        .wrap:first-of-type{
+            padding-left: 0;
+        } 
+
+        .box:first-of-type{
+            margin-top: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 1px solid rgb(255, 255, 255);
+            margin-top: 30px;
+            width: 100%;
+        }
+        .clear {
+           clear:both;
+        }
+
+        div {
+            background-color: rgb(255, 255, 255);
+        }
+
+        img {
+            width: 100%;
+
+        }
     </style>
 </head>
 
 <body>
     <h1>Dominic Klyen's Progress Log </h1>
-    <table>
-        <tr>
-            <td style="width: 33%">
-                <a href="Training.html">
-                    <h2>Training Log</h2>
-                    <img src="Images/Capture.PNG" style="width: 30%">
-                    <p>This is a training HTML document im using to test out everyhting I learn with Html. I will keep using
-                        this when i need to learn or try something new.</p>
-                </a>
-            </td>
-            <td style="width: 33%">
-                <a href="60 day.html">
-                    <h2>60 Day Settlement Scheme</h2>
-                    <img src="Images/60 day screen cpature.PNG" style="width: 30%">
-                    <p>This is a page created following a brief to help explain to customers our 60 Settlment Scheme. This page
-                        was created using tables.</p>
-                    
-                </a>
-            </td>
-            <td style="width: 34%" rowspan="2">
-                <a href="https://k27odx.axshare.com/#g=1&p=home">
-                    <h2>Demo Page for Merchants</h2>
-                    <img src="Images/demo page capture.PNG" style="width: 30%">
-                    <p>I was asked to crate a demo page for a merchant to use as inspiration to create a finance page on their own websites about snap. Designed
-                        in axure but not officially coded.
-                    </p>
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 33%">
-                <a href="https://k27odx.axshare.com/#g=1&p=home">
-                    <h2>2</h2>
-                    <img src="Images/demo page capture.PNG" style="width: 30%">
-                    <p>I was asked to crate a demo page for merchant to mimic on there own websites about snap finance. Designed
-                        in axure but not officially coded.
-                    </p>
-                </a>
-            </td>
-            <td style="width: 33%">
-                <a href="https://k27odx.axshare.com/#g=1&p=home">
-                    <h2>3</h2>
-                    <img src="Images/demo page capture.PNG" style="width: 30%">
-                    <p>I was asked to crate a demo page for merhcant to mimic on there own websites about snap finance. Designed
-                        in axure but not officially coded.
-                    </p>
-                </a>
-            </td>
-        </tr>
-    </table>
+    <p><i>Coding with Zsolt</i></p>
+
+<div class="wrap">
+    <div class="box">
+        <a href="Training.html">
+            <img src="Images/Capture.PNG">
+            <h2>Training Log</h2>
+            <p>This is a training HTML document im using to test out everyhting I learn with Html. I will keep using this when
+                i need to learn or try something new.</p>
+        </a>
+    </div>
+    <div class="box clear">
+        <a href="Training.html">
+            <img src="Images/Capture.PNG">
+            <h2>Training Log</h2>
+            <p>This is a training HTML document im using to test out everyhting I learn with Html. I will keep using this when
+                i need to learn or try something new.</p>
+            <p>This is a training HTML document im using to test out everyhting I learn with Html. I will keep using this when
+                 i need to learn or try something new.</p>
+        </a>
+    </div>
+    <div class="box clear">
+        <a href="https://k27odx.axshare.com/#g=1&p=home">
+            <img src="Images/demo page capture.PNG">
+            <p>I was asked to crate a demo page for a merchant to use as inspiration to create a finance page on their own websites
+                about snap. Designed in axure but not officially coded.
+            </p>
+            <h2>Demo Page for Merchants</h2>
+        </a>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="box">
+        <a href="https://k27odx.axshare.com/#g=1&p=home">
+            <img src="Images/demo page capture.PNG">
+            <h2>Demo Page for Merchants</h2>
+            <p>I was asked to crate a demo page for a merchant to use as inspiration to create a finance page on their own websites
+                about snap. Designed in axure but not officially coded.
+            </p>
+        </a>
+    </div>
+    <div class="box">
+        <a href="https://k27odx.axshare.com/#g=1&p=home">
+            <img src="Images/demo page capture.PNG">
+            <h2>Demo Page for Merchants</h2>
+            <p>I was asked to crate a demo page for a merchant to use as inspiration to create a finance page on their own websites
+                about snap. Designed in axure but not officially coded.
+            </p>
+        </a>
+    </div>
+</div>
+
+<div class="wrap">
+    <div class="box">
+        <a href="60 day.html">
+            <img src="Images/60 day screen cpature.PNG">
+            <h2>60 Day Settlement Scheme</h2>
+            <p>This is a page created following a brief to help explain to customers our 60 Settlment Scheme. This page was
+                created using tables.</p>
+        </a>
+    </div>
+    <div class="box">
+        <a href="60 day.html">
+            <img src="Images/60 day screen cpature.PNG">
+            <h2>60 Day Settlement Scheme</h2>
+            <p>This is a page created following a brief to help explain to customers our 60 Settlment Scheme. This page was
+                created using tables.</p>
+        </a>
+    </div>
+</div>
+
+
 </body>
 
 </html>
