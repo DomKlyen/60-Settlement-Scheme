@@ -92,20 +92,12 @@ body {
 
     * {box-sizing: border-box;}
 
-.formbox {
-    width: 25%;
-}
 
 .remember {
     padding-top: 15px;
     margin-left: 40px;
 }
 
-.input-container {
-  display: flex;
-  width: 100%;
-  margin: 0 0 15px 10px;
-}
 
 .icon {
   padding: 10px;
@@ -125,22 +117,8 @@ body {
   border: 2px solid rgb(100, 120, 139);
 }
 
-.btn {
-  background-color: rgb(104, 130, 156);
-  color: white;
-  padding: 15px 20px;
-  border: none;
-  cursor: pointer;
-  width: 81%;
-  opacity: 0.9;
-  margin-left: 50px;
-}
-
-.btn:hover {
-  opacity: 1;
 
 
-}/*stamp*/
  
 
 /*tables*/
@@ -278,9 +256,6 @@ body {
     }
 /*div*/
 
-    div {
-        background-color: rgb(255, 255, 255);
-    }
 
     .wrap {
         float: left;
@@ -301,3 +276,68 @@ body {
         width: 100%;
 
     }
+
+
+
+
+
+
+
+
+/* GENERIC */ 
+.btn {
+    background-color: #ddd;
+    padding: 15px 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+.btn:hover {
+    background-color: #ccc;
+}
+input[type="text"], 
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+textarea {
+    padding: 7px 11px 5px;
+}
+
+
+/* FORMS */ 
+.formbox {
+    max-width: 50%;
+    border: 1px solid gray;
+    background: #eee;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 0 17px;
+}
+.formbox.formbox-wide {
+    max-width: 100%;
+}
+
+.formbox.formbox-wide .input-container {
+    max-width: 300px;
+}
+
+.formbox label {
+    display: block;
+    font-weight: bold;
+}
+.formbox .input-container {
+    margin: 0 0 15px;
+    color: inherit;
+}
+.formbox .input-container input[type="text"], 
+.formbox .input-container input[type="password"],
+.formbox .input-container input[type="date"], 
+.formbox .input-container input[type="tel"],
+.formbox textarea {
+    width: 100%;
+    display: block;
+}
+.formbox button {
+    color: inherit;
+}
