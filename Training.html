@@ -227,7 +227,7 @@
         </p>
 
     </div>
-        <div class="card"></div>
+        <div class="card">
         <h1>Tables</h1>
         <table class="table1">
             <caption>Test table</caption>
@@ -310,94 +310,95 @@
             </tr>
         </table>
     </div>
-        <div class="card">
+
+    <div class="card">
         <div class="formbox">
             <h2>Log In:</h2>
             <form action="https://consumer.snapfinance.co.uk/?#/?mid=14353">
                 <div class="input-container">
-                    <i class="envelopeicon">
-                        <img src="Images/Male user.png" alt="male">
-                    </i>
+                    <label>Username</label>
                     <input type="text" placeholder="Username" name="uname" id="uname" required="required" />
                 </div>
-
                 <div class="input-container">
-                    <i class="keyicon">
-                        <img src="Images/link.png" alt="male">
-                    </i>
-                    <input type="text" placeholder="Password" name="Password" id="Password" required="required" />
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" name="Password" id="Password" required="required" />
                 </div>
-                <div>
+                <div class="input-container">
+                    <input type="checkbox" name="remember" /> Remember me
+                </div>
+                <div class="input-container">
                     <button type="submit" class="btn">Login</button>
-                    <div  class="remember">
-                        <input type="checkbox" checked="checked" name="remember" /> Remember me
-                    </div>
                 </div>
             </form>
         </div>
     </div>
-        <div class="card">
-        <h2>Contact Us:</h2>
-        <fieldset>
-            <legend>Personal information:</legend>
-            <form action="Images/infosection1.jpg">
-                <div>
-                    <br/>
-                    <label>Name</label>
-                    <input type="text" placeholder="Name" />
-                    <br/>
-                    <label>Email
-                    </label>
-                    <input type="text" placeholder="Email" />
-                    <br/>
-                    <label>Date of Birth
-                    </label>
-                    <input type="date" />
-                    <br/>
-                    <label>Telephone Number
-                    </label>
-                    <input type="tel" placeholder="Tel:" />
-                    <br/>
-                    <br/>
-                    <label>Message</label>
-                    <br/>
-                    <textarea name="Message" rows="10" cols="20">
-        </textarea>
-                    <br/>
-                    <br/>
-                    <label>Reason for Contact
-                        <br/>
-                    </label>
-                    <input type="text" disabled="disabled" />
-        </fieldset>
-        </div>
-        </form>
-        <br/>
 
-        <form>
-            <div>
-                <input type="radio" name="one" checked="checked" />Option 1 should be selected by default
-                <br/>
-                <input type="radio" name="one" />Option 2 is something else
-                <br/>
-                <input type="radio" name="one" disabled />Option 3 is disabled
-                <br/>
-                <br/>
-                <select name="list">
-                    <option value="Please select" disabled="disabled" selected="selected">Please Select</option>
-                    <optgroup label="1-2">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                    </optgroup>
-                    <optgroup label="3-5">
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </optgroup>
-                </select>
+    <div class="card">
+        <div class="formbox formbox-wide">
+            <h2>Contact Us:</h2>
+                <form action="Images/infosection1.jpg">
+                    <fieldset>
+                    <legend>Personal information:</legend>
+                        <div>
+                            <div class="input-container">
+                                <label>Name</label>
+                                <input type="text" placeholder="Name" />
+                            </div>
+                            <div class="input-container">
+                                <label>Email</label>
+                                <input type="text" placeholder="Email" />
+                            </div>
+                            <div class="input-container">
+                                <label>Date of Birth</label>
+                                <input type="date" />
+                            </div>
+                            <div class="input-container">
+                                <label>Telephone Number</label>
+                                <input type="tel" placeholder="Tel:" />
+                            </div>
+                    </fieldset>
+                    <br/>
+                    <fieldset>
+                            <legend>Additional information:</legend>
+                            <div class="input-container">                        
+                            <label>Reason for Contact</label>
+                            <input type="text" disabled="disabled" />
+                            </div>
+                            <div class="input-container"> 
+                            <label>Message</label>
+                            <textarea name="Message" rows="10" cols="20"></textarea>
+                            </div>           
+                    </fieldset>
+                        </div>
+                </form>
             </div>
-        </form>
-    </div>
+        </div>
+
+        <div class="card">
+            <form>
+                <div>
+                    <input type="radio" name="one" checked="checked" />Option 1 should be selected by default
+                    <br/>
+                    <input type="radio" name="one" />Option 2 is something else
+                    <br/>
+                    <input type="radio" name="one" disabled />Option 3 is disabled
+                    <br/>
+                    <br/>
+                    <select name="list">
+                        <option value="Please select" disabled="disabled" selected="selected">Please Select</option>
+                        <optgroup label="1-2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </optgroup>
+                        <optgroup label="3-5">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
