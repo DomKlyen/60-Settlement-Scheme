@@ -7,6 +7,15 @@ body {
     background: #4badac;
 }
 
+.main-header{
+    color: #eee;
+}
+
+hr {
+    height: 4px;
+    background-color: #eee;
+}
+
     .italic {
         font-style: italic;
     }
@@ -53,11 +62,6 @@ body {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.651);
     }
     
-
-    hr {
-        height: 4px; 
-        background-color: black;
-    }
 
  /*address*/
 
@@ -330,12 +334,28 @@ body {
         border: 1px solid rgb(255, 255, 255);
         margin-top: 30px;
         width: 100%;
+        background-color: #eee;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.808);
+        border-radius: 8px;
     }
+
+    .box :hover {
+        box-shadow: 5px 8px 20px 0px black;
+    }
+
     .clear {
        clear:both;
-
-
     }
+
+    .box img {
+        border-radius: 8px;
+    }
+
+    .box p, 
+    .box h2{
+        padding: 8px;
+    }
+
 /*div*/
 
 
