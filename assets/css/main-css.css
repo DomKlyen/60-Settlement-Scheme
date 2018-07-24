@@ -1,20 +1,28 @@
 /* Text */
 
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Special+Elite');
+@import url("https://use.fontawesome.com/releases/v5.1.1/css/all.css");
+
+
+
 body {
     max-width: 992px;
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
     background: #4badac;
 }
 
 .main-header{
     color: #eee;
+    font-family: 'Fredoka One', cursive;
+    font-size: 29px;
 }
 
 hr {
     height: 4px;
     background-color: #eee;
 }
+
 
     .italic {
         font-style: italic;
@@ -66,7 +74,7 @@ hr {
  /*address*/
 
     .address    {
-        background-image: url("../Images/Map.PNG");
+        background-image: url("../../media/content-images/training-map.PNG");
         text-align: right;
         padding: 65px 15px;
         line-height: 28px;
@@ -126,35 +134,25 @@ hr {
 
     }
 
-    .phone {
-        list-style-image: url('../Images/telephone.png');
-    }
-
-    .tab {
-        list-style-image: url('../Images/New\ Tab.png');
-    }
-
-    .window {
-        list-style-image: url('../Images/Male\ user.png');
-    }
-
-    .top {
-        list-style-image: url('../Images/home.png');
-    }
-
-    .bookmark {
-        list-style-image: url('../Images/link.png');
-    }
-
-    .email {
-        list-style-image: url('../Images/email.png');
+    .icon-list,
+    .icon-list a {
+        list-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 0;
+        color: black;
+        line-height: 30px;
     }
 
     ul .list-item-invisible,
-    ol .list-item-invisible {
+    ol .list-item-invisible, {
         list-style: none; 
     }
 
+    i {
+        font-size: 50px;
+        padding: 20px;
+    }
 
     /*forms*/
 
