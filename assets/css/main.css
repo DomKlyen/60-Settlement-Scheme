@@ -6,16 +6,30 @@
 
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient( #ffffff, #55a1a1);
+}
+
+.container {
     max-width: 992px;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #4badac;
+}
+
+.container-fluid {
+    max-width: none;
 }
 
 .main-header{
     color: #eee;
     font-family: 'Fredoka One', cursive;
     font-size: 29px;
+}
+
+.main-footer{
+    padding-top: 14px;
+    color: #eee;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
 }
 
 hr {
@@ -54,7 +68,7 @@ hr {
           transform: rotateY(1turn);
         }
       }
-      .container {
+      .spinning {
         perspective: 1000px;
       }
 
@@ -70,6 +84,10 @@ hr {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.651);
     }
     
+    h1 a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
 
  /*address*/
 
@@ -119,6 +137,12 @@ hr {
         vertical-align: middle;
     }
 
+    header,
+    main,
+    footer {
+        clear: both;
+    }
+
 /*list*/
 
     .circle li {
@@ -149,7 +173,9 @@ hr {
         list-style: none; 
     }
 
-    i {
+    .icon-list .fa
+    .icon-list .fab
+    .icon-list .far {
         font-size: 50px;
         padding: 20px;
     }
@@ -207,6 +233,11 @@ hr {
         border-collapse: collapse;
         border-spacing: 0;
         width: 100%;
+    }
+
+    .table-60-day td {
+        padding: 0;
+
     }
 
     table1 tbody tr:nth-child(odd){
