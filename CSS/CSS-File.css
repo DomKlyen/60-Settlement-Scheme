@@ -4,6 +4,7 @@ body {
     max-width: 992px;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
+    background: #4badac;
 }
 
     .italic {
@@ -15,14 +16,41 @@ body {
 
     .card {
 
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
         transition: 0.3s;
-        padding: 2px;
+        padding: 15px;
         margin-bottom: 22px;
+        border-radius: 5px;
+        background-color: #eee;
     }
-    
+
+    .card-spin:hover {
+        animation: spin 5s ease;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes spin {
+        from {
+          transform: rotateY(0);
+        }
+        to {
+          transform: rotateY(1turn);
+        }
+      }
+      .container {
+        perspective: 1000px;
+      }
+
+    .card > *:first-child {
+        margin-top: 0px;
+    }
+
+    .card > *:last-child {
+        margin-bottom: 0px;        
+    }
+
     .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.651);
     }
     
 
@@ -30,6 +58,34 @@ body {
         height: 4px; 
         background-color: black;
     }
+
+ /*address*/
+
+    .address    {
+        background-image: url("../Images/Map.PNG");
+        text-align: right;
+        padding: 65px 15px;
+        line-height: 28px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+ /*quotes*/
+
+    blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #ccc;
+        padding: 0.5em 10px;
+      }
+      blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+      }
+
 
 /* Alignment */
 
@@ -46,8 +102,9 @@ body {
         text-align: justify;
     }
 
-    .inside {
+    .card-inside {
         list-style-position: inside;
+        vertical-align: middle;
     }
 
 /*list*/
@@ -61,7 +118,8 @@ body {
     }
 
     .w3 {
-        list-style-image: url('../Images/w3.png') ;
+        list-style-image: url('../Images/w3.png');
+
     }
 
     .phone {
@@ -88,9 +146,28 @@ body {
         list-style-image: url('../Images/email.png');
     }
 
+    ul .list-item-invisible,
+    ol .list-item-invisible {
+        list-style: none; 
+    }
+
+
     /*forms*/
 
     * {box-sizing: border-box;}
+
+.card-form {
+    width: 100%;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.formbox > *:first-child {
+    margin-top: 0px;
+}
+
 
 
 .remember {
@@ -151,6 +228,11 @@ body {
 
     .table1 thead:first-child th:first-child {
         width: 2%;
+    }
+
+    .card-tables {
+        overflow-y: auto;
+        overflow-x: scroll;
     }
 
     .table2 tr {
@@ -278,11 +360,9 @@ body {
     }
 
 
-
-
-
-
-
+    fieldset {
+        margin: 0 0 15px;
+    }
 
 /* GENERIC */ 
 .btn {
@@ -307,12 +387,11 @@ textarea {
 
 /* FORMS */ 
 .formbox {
-    max-width: 50%;
     border: 1px solid gray;
     background: #eee;
     margin: 0 auto;
     border-radius: 5px;
-    padding: 0 17px;
+    padding: 15px 15px 0;
 }
 .formbox.formbox-wide {
     max-width: 100%;
@@ -326,7 +405,8 @@ textarea {
     display: block;
     font-weight: bold;
 }
-.formbox .input-container {
+.formbox .input-container,
+.radio-buttons {
     margin: 0 0 15px;
     color: inherit;
 }
@@ -340,4 +420,24 @@ textarea {
 }
 .formbox button {
     color: inherit;
+}
+
+.dropdown-list {
+    max-width: 288px;
+    width: 100%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+form *:disabled,
+form .disabled{
+    cursor: not-allowed;
+}
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{ 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

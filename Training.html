@@ -2,16 +2,17 @@
 <html lang="en-US">
 
 <head>
+    <link rel="shortcut icon" href="favicon.ico" >
+    <link rel="icon" href="favicon2.ico" type="image">
 
     <link rel="stylesheet" type="text/css" href="CSS/normalize.css" />
     <link rel="stylesheet" type="text/css" href="CSS/CSS-File.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 </head>
 
-<body>
+<body>     
     <div>
-
-
         <div class="card">
             <h1>Headings</h1>
             <h1>h1. heading
@@ -54,10 +55,8 @@
                 est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
             </p>
             <p>
-                <kbd>Keyboard input</kbd>
-                <br>
-                <var>Variable</var>
-                <br>
+                <kbd>Keyboard input</kbd><br>
+                <var>Variable</var><br>
                 <s> strikethrough </s>
             </p>
         </div>
@@ -83,29 +82,23 @@
         </div>
         <div class="card">
         <h1 id="AD">Addresses</h1>
-        <address>
-            <b>Twitter, Inc.</b>
-            <br/> 1355 Market Street, Suite 900
-            <br/> San Francisco, CA 94103
-            <br/> P: (123) 456-789
-            <br/>
+        <address class="address">
+            <b>Twitter, Inc.</b><br/> 
+            1355 Market Street, Suite 900<br/> 
+            San Francisco, CA 94103<br/>
+            P: (123) 456-789
         </address>
     </div>
-        <div class="card">
-        <h1>Blockquotes</h1>
+    <div class="card">
+    <h1>Blockquotes</h1>
 
-        <blockquote>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
-            <footer>Someone famous in
-                <cite> Source Title</cite>
-            </footer>
-        </blockquote>
-
-        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</q>
+    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
         <footer>Someone famous in
             <cite> Source Title</cite>
         </footer>
-
+    </blockquote>
     </div>
+
         <div class="card">
         <h1>Description List</h1>
         <dl>
@@ -130,11 +123,11 @@
             <li>Integer molestie lorem at massa</li>
             <li> Facilisis in pretium nisl aliquet</li>
             <li> Nulla volutpat aliquam velit</li>
-            <li>
+            <li class="list-item-invisible">   
                 <ul class="circle">
                     <li> Phasellus iaculis neque</li>
                     <li> Purus sodales ultricies</li>
-                    <li>
+                    <li class="list-item-invisible">   
                         <ul class="square">
                             <li> Vestibulum laoreet porttitor sem</li>
                         </ul>
@@ -145,16 +138,14 @@
             <li> Faucibus porta lacus fringilla vel</li>
             <li> Aenean sit amet erat nun</li>
         </ul>
-        <br/>
 
         <ol type="1">
             <li>Consectetur adipiscing elit</li>
             <li>Integer molestie lorem at massa</li>
-            <li>
+            <li class="list-item-invisible">
                 <ol type="a">
                     <li>Facilisis in pretium nisl aliquet</li>
-
-                    <li>
+                    <li class="list-item-invisible">
                         <ol type="i">
                             <li> Nulla volutpat aliquam velit</li>
                         </ol>
@@ -165,15 +156,14 @@
             </li>
             <li> Eget porttitor lorem</li>
         </ol>
-        <br/>
 
         <ol start="14">
             <li>Consectetur adipiscing elit</li>
             <li>Integer molestie lorem at massa</li>
-            <li>
+            <li class="list-item-invisible">
                 <ol type="a" start="11">
                     <li>Facilisis in pretium nisl aliquet</li>
-                    <li>
+                    <li class="list-item-invisible">
                         <ol type="I" start="5">
                             <li> Nulla volutpat aliquam velit</li>
                         </ol>
@@ -185,9 +175,9 @@
             <li> Eget porttitor lorem</li>
         </ol>
     </div>
-        <div class="card">
+        <div class="card card-inside">
         <h1>Links and lists with special Icon</h1>
-        <ul class "inside">
+        <ul>
             <li class="w3">
                 <a href="https://www.w3schools.com/html/">W3 Schools</a>
             </li>
@@ -220,12 +210,18 @@
             </li>
         </ul>
         </div>
-        <div class="card">
+
+        <div class="container">
+        <div class="card card-spin">
         <h1>Code</h1>
         <p>
-            <code>x = 5 <br/>y = 6 <br/>z = x + y <br/></code>
+            <code>
+                x = 5 <br/>
+                y = 6 <br/>
+                z = x + y
+            </code>
         </p>
-
+    </div>
     </div>
         <div class="card">
         <h1>Tables</h1>
@@ -265,10 +261,10 @@
                 </tr>
             </tfoot>
         </table>
-        <br/>
+        </div>
 
+        <div class="card card-tables">
         <table class="table2">
-
             <thead>
                 <tr>
                     <th>#</th>
@@ -311,7 +307,7 @@
         </table>
     </div>
 
-    <div class="card">
+    <div class="card card-form">
         <div class="formbox">
             <h2>Log In:</h2>
             <form action="https://consumer.snapfinance.co.uk/?#/?mid=14353">
@@ -324,7 +320,7 @@
                     <input type="password" placeholder="Password" name="Password" id="Password" required="required" />
                 </div>
                 <div class="input-container">
-                    <input type="checkbox" name="remember" /> Remember me
+                    <label><input type="checkbox" name="remember" /> Remember Me</label>
                 </div>
                 <div class="input-container">
                     <button type="submit" class="btn">Login</button>
@@ -333,7 +329,7 @@
         </div>
     </div>
 
-    <div class="card">
+    <div class="card card-form">
         <div class="formbox formbox-wide">
             <h2>Contact Us:</h2>
                 <form action="Images/infosection1.jpg">
@@ -357,7 +353,6 @@
                                 <input type="tel" placeholder="Tel:" />
                             </div>
                     </fieldset>
-                    <br/>
                     <fieldset>
                             <legend>Additional information:</legend>
                             <div class="input-container">                        
@@ -374,29 +369,37 @@
             </div>
         </div>
 
-        <div class="card">
-            <form>
-                <div>
-                    <input type="radio" name="one" checked="checked" />Option 1 should be selected by default
-                    <br/>
-                    <input type="radio" name="one" />Option 2 is something else
-                    <br/>
-                    <input type="radio" name="one" disabled />Option 3 is disabled
-                    <br/>
-                    <br/>
-                    <select name="list">
-                        <option value="Please select" disabled="disabled" selected="selected">Please Select</option>
-                        <optgroup label="1-2">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </optgroup>
-                        <optgroup label="3-5">
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </optgroup>
-                    </select>
-                </div>
+        <div class="card card-form">
+            <form class="formbox formbox-wide">
+                <h2> Buttons and Dropdowns</h2>
+                <fieldset>
+                    <legend>Radio Buttons</legend>
+                    <div>
+                        <div class="radio-buttons"> 
+                            <label><input id="1" type="radio" value="1" name="one" checked="checked"/> Option 1 should be selected by default</label>
+                        </div>
+                        <div class="radio-buttons">
+                            <label><input id="2" type="radio" value="1" name="one"/> Option 2 is something else</label>
+                        </div>
+                        <div class="radio-buttons">     
+                            <label class="disabled"><input id="3" type="radio" value="1" name="one" disabled/> Option 3 is disabled</label>
+                        </div>
+                        <div>  
+                            <select name="list" class="dropdown-list">
+                                <option value="Please select" disabled="disabled" selected="selected" hidden="hidden">Please Select</option>
+                                <optgroup label="1-2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </optgroup>
+                                <optgroup label="3-5">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </optgroup>
+                            </select>
+                        </div>    
+                    </div>
+                </fieldset>    
             </form>
         </div>
     </div>
