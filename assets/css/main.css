@@ -13,6 +13,7 @@ body {
 .container {
     max-width: 992px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .container-fluid {
@@ -25,9 +26,10 @@ body {
 
 
 .main-header {
-    color: rgb(185, 185, 185 255);
+    color: rgb(243, 243, 243);
     font-family: 'Fredoka One', cursive;
     font-size: 29px;
+    padding-top: 20px;
 }
 
 .main-footer {
@@ -159,7 +161,8 @@ hr {
 
     header,
     main,
-    footer {
+    footer,
+    .clearfix {
         clear: both;
     }
 
@@ -466,7 +469,7 @@ hr {
         right: -10px;
         position: absolute;
         bottom: 20px;
-        width: 0px;
+        width: 100px;
         box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, 0.5)
     }
 
@@ -548,6 +551,7 @@ hr {
         font-weight: bold;
     }
 
+    
 
 /*div*/
 
@@ -558,19 +562,55 @@ hr {
         padding-left: 30px;
     }
 
-    .wrap:first-of-type{
+    .wrap:first-of-type {
         padding-left: 0;
     } 
+ /*nav bar*/
 
+.topnav {
+    background-color: rgb(23, 102, 126);
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(252, 252, 252);
+    color:  rgb(12, 110, 102);
+}
+
+
+.active {
+    background-color: rgb(12, 110, 102);
+    color: white;
+}
+
+
+.topnav .icon {
+    display: none;
+}
 
     /*images*/
 
     
     img {
         width: 100%;
-
     }
 
+    .logo {
+        width: 225px;
+        padding-right: 12px;
+        float: left;
+    }
 
     fieldset {
         margin: 0 0 15px;
@@ -652,4 +692,85 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button{ 
   -webkit-appearance: none; 
   margin: 0; 
+}
+
+/*media queries*/
+
+
+@media screen and (max-width: 720px) {
+   .wrap {
+        width: 50%;     
+    }
+    
+    .box:first-of-type {
+        margin-top: 30px;
+    }
+
+    .overflow p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: none;
+    }
+
+    .overflow p:first-of-type,
+    .overflow p:last-of-type {
+        display: block;
+    }
+
+    .overflow p:hover {
+        overflow: visible;
+    }
+
+    .overflow::after {
+        content: "\f02c";
+        font-weight: 900;
+        font-size: 48px;
+        font-family: "Font Awesome 5 Free";
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .box:hover .overflow::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+      background: rgb(12, 110, 102);
+    }
+    .topnav {
+        background-color: transparent;
+    }
+
+    .wrap {
+        width: 100%;
+        padding-left: 0;        
+    }
+
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
 }

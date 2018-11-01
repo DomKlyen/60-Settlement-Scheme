@@ -1,0 +1,95 @@
+/* GENERIC */
+body {
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 140px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* HEADER */
+
+.contact {
+    margin: 0;
+}
+
+.contact li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #336aaf;
+    text-decoration: none; 
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #336aaf;
+    text-decoration: none; 
+}
+
+.menu li:hover {
+    color: #8dc63f
+}
+
+.menu li {
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 17px;
+}
+
+.btn-apply,
+.btn-apply:hover {
+    background: white;
+    padding: 2px 11px;
+    font-size: 0.8vw;
+    color: #8dc63f;
+    text-decoration: none;
+    border: #8dc63f solid 1px;
+}
+
+.hero {
+    background-image: url('../../media/content-images/60-day-hero.png');
+    background-size: cover;
+    padding: 4%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-text {
+    text-transform: uppercase;
+    color: #003767;
+    margin-top: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.hero-text h1 {
+    font-size: 80px;
+    color: #8dc63f;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.hero-text h3 {
+    font-size: 20px;
+}
