@@ -1,0 +1,27 @@
+.row > [class*="col-"] {
+    background: palevioletred;
+    border: 0.2px solid black;
+}
+
+
+.form-box {
+    background-color: rgb(201, 196, 191);
+    padding: 5px;
+}
+
+.page-header {
+    background-color: white;
+    border: none;
+
+}
+
+.btn-apply, .btn-apply:hover, .btn-apply:focus, .btn-apply:active {
+    background-color: transparent;
+    color: #8ec640;
+    border: 1px solid #8ec640;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: initial;
+}
+
+
